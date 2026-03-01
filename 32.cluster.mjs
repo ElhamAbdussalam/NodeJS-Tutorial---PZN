@@ -22,5 +22,5 @@ if (cluster.isWorker) {
     response.exit();
   });
 
-  server.listen(3000, "localhost");
+  server.listen(3000);
 }
