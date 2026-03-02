@@ -19,5 +19,8 @@
   "type": "module",
   "dependencies": {
     "lodash": "^4.17.23"
+  },
+  "devDependencies": {
+    "moment": "^2.30.1"
   }
 }
