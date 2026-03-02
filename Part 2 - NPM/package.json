@@ -9,6 +9,10 @@
     "poststart": "echo 'After Application Start'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "exports": {
+    ".": "./1.index.js",
+    "./write": "./2.write.js"
+  },
   "author": "",
   "license": "ISC",
   "description": "",
