@@ -4,6 +4,9 @@
   "main": "1.index.js",
   "scripts": {
     "run": "node 1.index.js",
+    "prestart": "echo 'Before Application Start'",
+    "start": "node 1.index.js",
+    "poststart": "echo 'After Application Start'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
