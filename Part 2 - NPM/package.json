@@ -18,7 +18,8 @@
   "description": "",
   "type": "module",
   "dependencies": {
-    "lodash": "^4.17.23"
+    "lodash": "^4.17.23",
+    "npm-library-elhamabdussalam": "^1.0.0"
   },
   "devDependencies": {
     "moment": "^2.30.1"
