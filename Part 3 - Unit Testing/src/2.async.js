@@ -1,4 +1,4 @@
-const sayHelloAsync = (name) => {
+exports.sayHelloAsync = (name) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       if (name) {
@@ -9,5 +9,3 @@ const sayHelloAsync = (name) => {
     }, 1000);
   });
 };
-
-export default sayHelloAsync;
