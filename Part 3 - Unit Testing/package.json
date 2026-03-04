@@ -9,6 +9,7 @@
   "type": "module",
   "author": "M Elham Abdussalam",
   "jest": {
+    "maxConcurrency": 1,
     "transform": {
       "^.+\\.[t|j]sx?$": "babel-jest"
     },
