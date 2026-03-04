@@ -8,6 +8,20 @@
   },
   "type": "module",
   "author": "M Elham Abdussalam",
+  "jest": {
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    },
+    "collectCoverage": true,
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    }
+  },
   "license": "ISC",
   "devDependencies": {
     "@babel/plugin-transform-runtime": "^7.29.0",
