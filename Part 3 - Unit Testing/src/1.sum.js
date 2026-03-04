@@ -10,4 +10,12 @@ const sumAll = (numbers) => {
   return total;
 };
 
-module.exports = { sum, sumAll };
+const calculate = (numbers, callback) => {
+  let total = 0;
+  for (let number of numbers) {
+    total += number;
+  }
+  callback(total);
+};
+
+module.exports = { sum, sumAll, calculate };
