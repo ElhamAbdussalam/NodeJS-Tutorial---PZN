@@ -29,3 +29,16 @@ test("test mock return value", () => {
   expect(callback.mock.results[0].value).toBe(40);
   expect(callback.mock.results[1].value).toBe(80);
 });
+
+test("test mock implementation", () => {
+  const callback = jest.fn();
+  callback.mockImplementation((total) => {
+    return total * 2;
+  });
+
+  expect(calculateAndReturn([10, 10, 10], callback)).toBe(60);
+  expect(calculateAndReturn([10, 10, 10, 10, 10], callback)).toBe(100);
+
+  expect(callback.mock.results[0].value).toBe(60);
+  expect(callback.mock.results[1].value).toBe(100);
+});
