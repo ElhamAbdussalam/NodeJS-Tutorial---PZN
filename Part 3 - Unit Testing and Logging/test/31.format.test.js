@@ -1,0 +1,12 @@
+import winston from "winston";
+
+test("logging with format", () => {
+  const logger = winston.createLogger({
+    level: "info",
+    // format: winston.format.json(),
+    format: winston.format.simple(),
+    transports: [new winston.transports.Console({})],
+  });
+
+  logger.info("Hello logger");
+});
