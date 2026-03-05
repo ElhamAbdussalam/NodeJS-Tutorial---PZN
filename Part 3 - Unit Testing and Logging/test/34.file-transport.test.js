@@ -8,6 +8,10 @@ test("logging with file transport", () => {
       new winston.transports.File({
         filename: "application.log",
       }),
+      new winston.transports.File({
+        level: "error",
+        filename: "application-error.log",
+      }),
     ],
   });
 
