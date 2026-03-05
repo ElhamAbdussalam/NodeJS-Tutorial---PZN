@@ -11,3 +11,13 @@ test("mock modules getProductById", () => {
   const product = ProductService.findById(1);
   expect(product).toEqual({ id: 1, name: "Product Mock" });
 });
+
+test("mock modules getAllProducts", () => {
+  const products = [
+    { id: 1, name: "Product Mock 1" },
+    { id: 1, name: "Product Mock 1" },
+  ];
+  getAllProducts.mockReturnValue(products);
+
+  expect(ProductService.findAll()).toEqual(products);
+});
